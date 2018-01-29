@@ -1,0 +1,27 @@
+uuid: 7509b152-8cb0-4acc-bf4f-5aa144cc0066
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.appointment_calendar.field_appointment_date
+    - node.type.appointment_calendar
+  module:
+    - user
+_core:
+  default_config_hash: bpGFhZSYwMwssgTuVMVQx7f9j2qrEcdqbWVGDNL0mpA
+id: node.appointment_calendar.teaser
+targetEntityType: node
+bundle: appointment_calendar
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_appointment_date: true
+  langcode: true

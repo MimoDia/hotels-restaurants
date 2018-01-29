@@ -1,0 +1,72 @@
+hello.hello:
+ path: '/hello/{param}'
+ defaults:
+  _title: 'Hello Page et acess utilisateur de plus de 48H'
+  _controller: '\Drupal\hello\Controller\HelloController::content'
+  param: 'no parameter'
+ requirements:
+  _custom_access_hello: '48' # voir fichier hello.service.yml# _access: 'TRUE' donner la permission a tout le monde
+
+hello.json:
+  path: '/hello-json'
+  defaults:
+   _title: 'Hello tableau json'
+   _controller: '\Drupal\hello\Controller\HelloController::contenu'
+  requirements:
+   _access: 'TRUE'
+   
+
+hello.listenode: # nomdumodule.nomdelaroute (route name)
+ path: '/hello/liste/{nodetype}'
+ defaults:
+  _title: 'liste des nodes disponibles'
+  _controller: '\Drupal\hello\Controller\HelloNodeListeController::nodeListe'
+  nodetype: NULL
+ requirements:
+  _access: 'TRUE'
+
+hello.historyUpdate: # nomdumodule.nomdelaroute (route name)
+ path: '/node/{node}/history' # node/98/history dans l'url
+ defaults:
+  _title: 'Node update history est le titre de ma page'
+  _controller: '\Drupal\hello\Controller\HelloNodeHistoryController::revisionNode'
+ requirements:
+  _permission: 'view publis content'
+  _access: 'TRUE'
+
+
+
+hello.form: # nomdumodule.nomdelaroute (route name)
+ path: '/hello-form' # node/98/history dans l'url
+ defaults:
+  _title: 'My form'
+  _form: '\Drupal\hello\Form\HelloForm'
+ requirements:
+  _permission: 'access hello'  #_access: ' TRUE' qui etait la avant de faire le fichier permissions.yml
+
+
+hello.blockcolor: # nomdumodule.nomdelaroute (route name)
+ path: '/admin/appearance/hello-blockcolor' # node/98/history dans l'url
+ defaults:
+  _title: 'Form Admin bloc color'
+  _form: '\Drupal\hello\Form\HelloFormAdminBlockColor'
+ requirements:
+  _permission: 'administer helloadminblockcolor' #  _access: ' TRUE' qui etait la avant de faire le fichier permissions.yml
+
+
+hello.formcountry: # nomdumodule.nomdelaroute (route name)
+ path: '/hello-form-country' # node/98/history dans l'url
+ defaults:
+  _title: 'Form country'
+  _form: '\Drupal\hello\Form\HelloFormCountry'
+ requirements:
+   _access: 'TRUE'
+
+
+# hello.access:
+#  path: '/hello-access'
+#  defaults:
+#   _title: 'Hello acess utilisateur de plus de 48H'
+#   _controller: '\Drupal\hello\Controller\HelloController::content'
+#  requirements:
+#   _custom_access_hello: '48' # voir fichier hello.service.yml# _access: 'TRUE' donner la permission a tout le monde

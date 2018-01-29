@@ -1,0 +1,167 @@
+<?php 
+
+// Chemin qui nous ramen vers le contrilleur de base
+use Drupal\Core\Entity\EntityManager;
+use Drupal\Core\Entity\EntityInterface;
+
+use Drupal\block\Entity\Block; // pour pouvoir utiliser un bloc
+
+function hello_cron(){
+drupal_set_message(t('hello module cron task done'),'warning');	
+}
+
+/***
+implemente hook_user_login
+*/
+function hello_user_login($account){
+//kint($account);
+//die(); // pour eviter de retomber automatiquement dans la page daccueil
+//drupal_set_message(t('Bonjour'),$account->get_current_user(oid),'success');
+// getAccountName()
+drupal_set_message(t('Hello and Welcome dear %name !' , array('%name' => $account->getAccountName() ) ) );
+
+
+//drupal_set_message('Bonjour et bienvenue !' .$account->getAccountName());
+}
+
+// user_log et user_logout sont des hook qui doivent etre fai dans ce fichier
+
+function hellocachedestructeur_user_logout($account){
+	\Drupal::service('cache_tags.invalidator')->invalidateTags(['ma_session']);
+}
+
+function hellocachedestructeur_user_login($account){
+	\Drupal::service('cache_tags.invalidator')->invalidateTags(['ma_session']);
+}
+
+ 		// $storage = \Drupal::entityTypeManager()->getStorage($entity_type); // =$entity_type = node
+
+// Drupal API->Functions-> Rechercher: hook_entity_update et on arrive sur : hook_entity_update(Drupal\Core\Entity\EntityInterface $entity)
+// ici on a donc Un HOOK_update
+function hello_node_update(\Drupal\Core\Entity\EntityInterface $entity){ // hello_entity_update() a ne pas mettre car confusion dans la gestion des role
+	 //kint($entity);
+	 //$RevisionAuthor= $entity->getRevisionAuthor();
+	 // kint($RevisionAuthor);
+		$nid = $entity->id();
+	 	$temps_mis_ajours = $entity->getChangedTime();	
+	 	$date_revision_Utilisateur = $entity->getRevisionUserId();
+
+	// kint(\Drupal::service('database'));
+	 $database = \Drupal::service('database');
+	 $insertion_db = $database->insert('hello_node_history')->
+	 fields(array(
+	  'nid'=> $nid,
+	  'update_time'=> $temps_mis_ajours,
+	  'uid' => $date_revision_Utilisateur,
+	 ))
+	 ->execute();
+
+	//die();
+}
+
+
+function hello_node_delete(\Drupal\Core\Entity\EntityInterface $entity) {
+
+  // Delete the entity's entry from a fictional table of all entities.
+		// kint(\Drupal::service('database'));
+		$nid = $entity->id();
+	 	$temps_mis_ajours = $entity->getChangedTime();	
+	 	$date_revision_Utilisateur = $entity->getRevisionUserId();
+
+	 $database = \Drupal::service('database')->delete('hello_node_history');
+	 // kint($database); // condition($field, $value = NULL, $operator = =)
+	 $delete_node = $database->condition('nid', $nid)->execute();
+
+}
+ 
+  /**
+  * Implements hook_block() 
+  */
+	function hello_preprocess_block(array &$variables){
+		//kint($variables);
+		// recuperer le srvice config
+		$class = \Drupal::config('hello.config')->get('color');
+
+		// kint($variables['attributes']);	
+		$block = Block::load($variables['elements']['#id']);
+		$region = $block->getRegion();
+
+		if($region == 'sidebar_first'){
+			$variables['attributes']['class'][] = $class ; // affiche le nom de la class
+		}
+
+		if($region == 'sidebar_second'){
+			$variables['attributes']['class'][] = $class ; // affiche le nom de la class
+		}
+	}
+
+// 	ILFAUT FAIRE UNN USE EN HAUT: use Drupal\block\Entity\Block;
+//	function hello_preprocess_block(&$variables){
+
+//     $block = Block::load($variables['elements']['#id']);
+//      $region = $block->getRegion();
+    
+//     $color = \drupal::config('hello.config')->get('color');
+    
+//     if($region == 'sidebar_first'){
+//         $variables['attributes']['class'][] = $color;
+//     }
+// }
+
+		// attachement de la librarie hello
+	 function hello_page_attachments(array &$page){
+		 $page['#attached']['library'][]= 'hello/hello'; // le 2 hello est le nom de la librarie hello.libraries.yml
+	}
+
+
+// Declarartion d'un nouveau type de formatage formatage diferent de ceux du coeur de Drupal #markup, "item, #theme ..."
+// On invoque le formatage avec un render array
+// ici le hooka recu les info declaré dans le controller (hello-node-history.php) qui lui aussi va permettre d'afficher les info sur le node et le count
+function hello_theme($existing, $type, $theme, $path) {
+ return array(
+   'hello_node_history' => array(
+     'template'  => 'hello-node-history', // Le temlate pointe vers le hello-node-history
+     'variables' => array(
+       'node'  => NULL,
+       'count' => NULL,
+     ),
+   ),
+ );
+}
+
+/**
+* Implements hook_form_alter()
+*/
+
+function hello_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+	// kint($form_id); // Affiche  'contact_message_feedback_form' qui correspond a l'id du formulaire
+	// On pouvait retouver le nom du formualire de contact avec webprofiler en ciblant le formulaire de conatct
+	// On fait un if pour eviter que le champ que lon veut rajouter ne sapplique sur tous les formulaire de conatct
+	// $form: formulaire courant
+    if($form_id=='contact_message_feedback_form')
+    {
+     $form['contact_message_feedback_form'] = array(
+      '#type' => 'tel',
+      '#title' => t('Telephone'),
+      '#weight' => -10,
+  	  '#required' => TRUE,
+      ); 
+
+     // $form['contact_message_feedback_form'] = array(
+     //  '#type' => 'textfield',
+     //  '#email' =>t('Email'),
+     //  '#weight' => -20,
+  	  // '#required' => TRUE,
+     //  );      
+     // Modification du champ submit(Send your message) par : Submit your message now
+      $form['actions']['submit']['#value'] = t('Oh my dear, submit your message now'); 
+
+      // Faire disparaitre ou cacher le champ nommé 'subject'
+      $form['subject']['#access']=false;
+      // unset($form['#process']); // pour dire a drupal de refaire la construction du nouveau formulaire par la phase de process
+    }
+
+ }
+
+
+

@@ -1,0 +1,22 @@
+uuid: 633617bc-ea8b-432b-98d8-ac954d016595
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texte
+    - paragraphs.paragraphs_type.visite_guidee
+  module:
+    - text
+id: paragraph.visite_guidee.field_texte
+field_name: field_texte
+entity_type: paragraph
+bundle: visite_guidee
+label: 'Texte descriptif de la visite guidée'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

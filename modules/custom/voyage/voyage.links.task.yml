@@ -1,0 +1,22 @@
+# Voyage routing definition
+voyage.settings_tab:
+  route_name: voyage.settings
+  title: 'Settings'
+  base_route: voyage.settings
+
+entity.voyage.canonical:
+  route_name: entity.voyage.canonical
+  base_route: entity.voyage.canonical
+  title: 'View'
+
+entity.voyage.edit_form:
+  route_name: entity.voyage.edit_form
+  base_route: entity.voyage.canonical
+  title: 'Edit'
+
+entity.voyage.delete_form:
+  route_name:  entity.voyage.delete_form
+  base_route:  entity.voyage.canonical
+  title: Delete
+  weight: 10
+

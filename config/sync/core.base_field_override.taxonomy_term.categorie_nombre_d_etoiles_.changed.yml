@@ -1,0 +1,18 @@
+uuid: 50acd45e-9b75-4198-81f4-81953b771d3b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie_nombre_d_etoiles_
+id: taxonomy_term.categorie_nombre_d_etoiles_.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: categorie_nombre_d_etoiles_
+label: Modifié
+description: 'Le moment auquel le terme a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

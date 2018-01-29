@@ -1,0 +1,22 @@
+uuid: 268e4c32-ef62-479a-9407-751deae0596a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: _hotel_categorie_etoile_nom_de_l_hotel
+label: 'Alias node de mes hotels'
+type: 'canonical_entities:node'
+pattern: '/hotels/[node:field_taxonomie_categorie_etoile]/[node:title]'
+selection_criteria:
+  6f851ff9-5aba-44a4-90a2-6bf128c657d3:
+    id: node_type
+    bundles:
+      hotel: hotel
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6f851ff9-5aba-44a4-90a2-6bf128c657d3
+selection_logic: and
+weight: -5
+relationships: {  }

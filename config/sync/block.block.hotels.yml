@@ -1,0 +1,29 @@
+uuid: d7bcb894-5575-42f1-b6cb-da3457cb75f1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.hotels
+  module:
+    - system
+  theme:
+    - bartik
+id: hotels
+theme: bartik
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'system_menu_block:hotels'
+settings:
+  id: 'system_menu_block:hotels'
+  label: Hôtels
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: '/hotel*'
+    negate: false
+    context_mapping: {  }

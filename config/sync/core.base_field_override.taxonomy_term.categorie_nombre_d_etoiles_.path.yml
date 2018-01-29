@@ -1,0 +1,20 @@
+uuid: cbac4ac9-992c-4dd3-9bb7-c4b597d2dd59
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie_nombre_d_etoiles_
+  module:
+    - path
+id: taxonomy_term.categorie_nombre_d_etoiles_.path
+field_name: path
+entity_type: taxonomy_term
+bundle: categorie_nombre_d_etoiles_
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

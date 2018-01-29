@@ -1,0 +1,23 @@
+uuid: 220f9806-c6c4-4c31-96c3-e7497930fd7a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+id: mettre_un_lien_sur_une_photo
+label: 'mettre un lien sur une photo'
+description: 'mettre un lien sur une photo pour etre oriente su cette photo '
+attributes: {  }
+matchers:
+  19bb787c-5fa8-456e-87b6-54f605a60fed:
+    uuid: 19bb787c-5fa8-456e-87b6-54f605a60fed
+    id: 'entity:file'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: null
+      group_by_bundle: null
+      images:
+        show_dimensions: true
+        show_thumbnail: false
+        thumbnail_image_style: null

@@ -1,0 +1,20 @@
+uuid: 88b1d286-2eb4-473d-8c0d-3bf73088d791
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie_nombre_d_etoiles_
+  module:
+    - text
+id: taxonomy_term.categorie_nombre_d_etoiles_.description
+field_name: description
+entity_type: taxonomy_term
+bundle: categorie_nombre_d_etoiles_
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

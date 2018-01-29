@@ -1,0 +1,16 @@
+uuid: 1a5bd777-b17d-4c45-8c55-72563eb30a49
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie_nombre_d_etoiles_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.categorie_nombre_d_etoiles_
+target_entity_type_id: taxonomy_term
+target_bundle: categorie_nombre_d_etoiles_
+default_langcode: site_default
+language_alterable: false

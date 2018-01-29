@@ -1,0 +1,9 @@
+uuid: db0003dd-a76e-4020-ae6d-0298d192d04d
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Catégorie d''hôtel (nombre d''étoiles)'
+vid: categorie_nombre_d_etoiles_
+description: ''
+hierarchy: 0
+weight: 0

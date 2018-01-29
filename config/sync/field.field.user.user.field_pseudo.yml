@@ -1,0 +1,20 @@
+uuid: f77a9bb2-08f5-4ba4-bc96-6f52ec8f1c7f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_pseudo
+  module:
+    - user
+id: user.user.field_pseudo
+field_name: field_pseudo
+entity_type: user
+bundle: user
+label: Pseudo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

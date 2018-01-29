@@ -1,0 +1,14 @@
+{
+  "name": "drupal/voyage",
+  "type": "drupal-module",
+  "description": "blogue de voyage",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/voyage",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/voyage",
+    "source": "http://cgit.drupalcode.org/voyage"
+  },
+  "require": { }
+}

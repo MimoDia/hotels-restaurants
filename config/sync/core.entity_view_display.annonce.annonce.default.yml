@@ -1,0 +1,55 @@
+uuid: 0d60a02a-c766-4753-9839-e2aa88e93854
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.annonce.annonce.field_description_de_l_annonce
+    - field.field.annonce.annonce.field_image
+  module:
+    - annonce
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: 3utL5Xz-9AnMdTpBIvvRSFunkRZl-Rl-tHo4BYxeewY
+id: annonce.annonce.default
+targetEntityType: annonce
+bundle: annonce
+mode: default
+content:
+  field_description_de_l_annonce:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

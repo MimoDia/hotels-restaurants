@@ -1,0 +1,12 @@
+uuid: 01b2f753-7f4d-4f74-8087-c366b61e736e
+langcode: fr
+status: true
+dependencies: {  }
+id: probleme_sur_le_site
+label: 'Probleme sur le site'
+recipients:
+  - webmaster@yahoo.fr
+reply: ''
+weight: 0
+message: "Bonjour Monsieur le responsable du site,\r\nje vous contacte car il y a un pobleme dans le site sur la partie des commandes"
+redirect: ''

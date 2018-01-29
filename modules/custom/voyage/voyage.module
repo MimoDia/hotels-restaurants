@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains voyage.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function voyage_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the voyage module.
+    case 'help.page.voyage':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('blogue de voyage') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function voyage_theme() {
+  return [
+    'voyage' => [
+      'render element' => 'children',
+    ],
+  ];
+}

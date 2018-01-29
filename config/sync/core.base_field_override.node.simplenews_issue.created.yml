@@ -1,0 +1,18 @@
+uuid: 16c4b5e1-a0ab-429b-bffc-550b11b73e6d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.simplenews_issue
+id: node.simplenews_issue.created
+field_name: created
+entity_type: node
+bundle: simplenews_issue
+label: 'Écrit le'
+description: 'L''heure à laquelle le nœud a été créé.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,28 @@
+<div>
+<span>
+  {% trans %}
+    The node {{ node.label }} has been updated {{ count }} time(s) (TEMPLATE).
+  {% endtrans %}
+</span>
+</div>
+{# twig est capable de recevoir  un objet etses proprietés #}
+{# comme la propriéte node nexiste pas on fait appelle a lamethode magic grace au getter et au setter #}
+
+
+
+{# 
+
+<div>
+<span>
+  {% if table ! NULL %}
+  {% trans %}
+    The node {{ node.label }} has been updated {{ count }} time(s) (TEMPLATE).
+  {% endtrans %}
+
+{% else %}
+  {% trans %} Any updating has been done yet {% endtrans %}
+{% endif %}
+</span>
+</div>
+
+ #}

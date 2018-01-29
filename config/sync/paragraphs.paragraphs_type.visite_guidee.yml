@@ -1,0 +1,9 @@
+uuid: a70af44f-7621-43d4-b81c-7274f660ffb7
+langcode: fr
+status: true
+dependencies: {  }
+id: visite_guidee
+label: 'Visite guidée'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

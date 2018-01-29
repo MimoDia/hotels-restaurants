@@ -1,0 +1,12 @@
+uuid: cf311c96-45b7-459a-9769-8e8b34290bdd
+langcode: fr
+status: true
+dependencies: {  }
+label: 'carré 200x200'
+id: carre_200x200
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 200
+hard_limit_height: 200

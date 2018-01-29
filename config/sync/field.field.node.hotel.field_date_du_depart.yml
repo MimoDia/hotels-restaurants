@@ -1,0 +1,21 @@
+uuid: 01bd3afb-a0d1-476c-9fd9-18afb8a33913
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_du_depart
+    - node.type.hotel
+  module:
+    - datetime
+id: node.hotel.field_date_du_depart
+field_name: field_date_du_depart
+entity_type: node
+bundle: hotel
+label: 'Date du départ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

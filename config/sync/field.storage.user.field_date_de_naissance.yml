@@ -1,0 +1,20 @@
+uuid: 81c5f297-0f98-4232-b548-3a3c136cb8c6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - datetime
+    - user
+id: user.field_date_de_naissance
+field_name: field_date_de_naissance
+entity_type: user
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

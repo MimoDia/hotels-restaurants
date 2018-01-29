@@ -1,0 +1,20 @@
+uuid: 438345dc-27e4-432b-8c60-298618b6436c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: par_default
+label: 'Mettre un lien sur un mot'
+description: 'Ce module permet de mettre un lien sur un mot qui permet losqu''on clique sur ce mot cela nous renvoie sur la page voulue'
+attributes: {  }
+matchers:
+  d7040357-cc10-4da5-b9c1-131649e6d58b:
+    uuid: d7040357-cc10-4da5-b9c1-131649e6d58b
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: false
+      include_unpublished: false

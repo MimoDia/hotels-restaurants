@@ -1,0 +1,18 @@
+uuid: 40bd4d0e-0e8d-47d6-aed3-7323c37dc5b9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ville
+id: taxonomy_term.ville.name
+field_name: name
+entity_type: taxonomy_term
+bundle: ville
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

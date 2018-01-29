@@ -1,0 +1,15 @@
+uuid: 283a4f9b-f951-4811-955e-319044bafaf2
+name: 'Nom de site modifié'
+mail: ibrahima88sow@yahoo.fr
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

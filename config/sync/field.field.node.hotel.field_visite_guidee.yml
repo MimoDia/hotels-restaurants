@@ -1,0 +1,29 @@
+uuid: 21700933-c8b3-4d25-8fdd-9481828ff592
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visite_guidee
+    - node.type.hotel
+  module:
+    - entity_reference_revisions
+id: node.hotel.field_visite_guidee
+field_name: field_visite_guidee
+entity_type: node
+bundle: hotel
+label: 'Visite guidée'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      visite_guidee:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

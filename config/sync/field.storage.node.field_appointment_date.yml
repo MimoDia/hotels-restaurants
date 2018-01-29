@@ -1,0 +1,22 @@
+uuid: 517afb14-6cff-4d43-bb8f-6f13889df1a0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+_core:
+  default_config_hash: sx-Yu99BsrXXQRbmJEjoJE04zW9QF1zHvArkhNGV_2w
+id: node.field_appointment_date
+field_name: field_appointment_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

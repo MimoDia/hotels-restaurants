@@ -1,0 +1,24 @@
+uuid: e2db571a-27e4-4ca3-be3d-d0588eedb6bf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.archive
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__archive_block_1
+theme: bartik
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_block:archive-block_1'
+settings:
+  id: 'views_block:archive-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

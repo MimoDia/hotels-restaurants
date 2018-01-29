@@ -1,0 +1,9 @@
+uuid: 1c3858e4-58c0-49d5-88e5-5943ab72a368
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type d''hôtel'
+vid: ville
+description: ''
+hierarchy: 0
+weight: -10

@@ -1,0 +1,15 @@
+uuid: b71c70c7-986e-4c89-a3b8-5f5fe62a5072
+langcode: fr
+status: true
+dependencies: {  }
+id: webmaster
+label: webmaster
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'bypass node access'
+  - 'use advanced search'
+  - 'view the administration theme'

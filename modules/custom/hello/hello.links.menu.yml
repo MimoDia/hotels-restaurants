@@ -1,0 +1,13 @@
+hello.hello.monPremierMenuPageHello:
+ title: 'Hello !'
+ route_name: hello.hello
+ description: 'Lien de ma page qui se nomne Hello'
+ menu_name: main
+
+
+hello.listenode:  # Nom de la route qui dans le fichier hello.routing.html.yml
+ title: 'Liste des nodes !'
+ route_name: hello.hello
+ description: 'Lien qui affiche la liste des nodes'
+ menu_name: main 
+

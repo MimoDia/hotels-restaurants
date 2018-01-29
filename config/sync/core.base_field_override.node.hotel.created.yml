@@ -1,0 +1,18 @@
+uuid: 94dcac14-8a80-4e0c-b014-48fe2cc88932
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.hotel
+id: node.hotel.created
+field_name: created
+entity_type: node
+bundle: hotel
+label: 'Écrit le'
+description: 'L''heure à laquelle le nœud a été créé.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

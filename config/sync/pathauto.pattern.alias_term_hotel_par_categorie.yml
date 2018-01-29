@@ -1,0 +1,23 @@
+uuid: d2af0c28-24f7-4ef1-b16c-d829d9ad3121
+langcode: fr
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: alias_term_hotel_par_categorie
+label: 'Alias term hotel par catégorie'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/hotels/[term:name]'
+selection_criteria:
+  f2e8f26f-b9db-4fd2-8774-840ebfadb83e:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      categorie_nombre_d_etoiles_: categorie_nombre_d_etoiles_
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: f2e8f26f-b9db-4fd2-8774-840ebfadb83e
+selection_logic: and
+weight: -5
+relationships: {  }

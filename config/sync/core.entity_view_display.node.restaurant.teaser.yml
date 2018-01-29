@@ -1,0 +1,21 @@
+uuid: 1978db50-1ee0-4dcd-aff6-a000bd827086
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.restaurant.field_description
+    - node.type.restaurant
+  module:
+    - user
+id: node.restaurant.teaser
+targetEntityType: node
+bundle: restaurant
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  langcode: true

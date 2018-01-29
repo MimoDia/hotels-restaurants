@@ -1,0 +1,21 @@
+uuid: dc6aff50-d044-4b69-b5d0-07cc54d38d8d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_pseudo
+field_name: field_pseudo
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

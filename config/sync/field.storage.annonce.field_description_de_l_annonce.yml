@@ -1,0 +1,19 @@
+uuid: 7d7a46e0-faf7-43d7-a35a-1db861ea1cd8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - annonce
+    - text
+id: annonce.field_description_de_l_annonce
+field_name: field_description_de_l_annonce
+entity_type: annonce
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 3d92dfe4-4ac5-4baa-b96b-eafcaed3d56c
+langcode: fr
+status: true
+dependencies: {  }
+id: dev
+label: dev
+folder: ../config/dev
+module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
+  devel: 0
+  devel_generate: 0
+  search_kint: 0
+theme: {  }
+blacklist:
+  - hello.config
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

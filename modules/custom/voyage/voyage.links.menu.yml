@@ -1,0 +1,14 @@
+
+# Voyage menu items definition
+entity.voyage.collection:
+  title: 'Voyage list'
+  route_name: entity.voyage.collection
+  description: 'List Voyage entities'
+  parent: system.admin_structure
+  weight: 100
+
+voyage.admin.structure.settings:
+  title: Voyage settings
+  description: 'Configure Voyage entities'
+  route_name: voyage.settings
+  parent: system.admin_structure

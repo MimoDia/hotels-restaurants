@@ -1,0 +1,25 @@
+uuid: 59ed192a-e59f-4567-b3bb-bf35b3a5c878
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_champ_video
+    - node.type.hotel
+  module:
+    - video_embed_field
+id: node.hotel.field_champ_video
+field_name: field_champ_video
+entity_type: node
+bundle: hotel
+label: 'Champ vidéo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube_playlist: youtube_playlist
+    youtube: youtube
+    vimeo: vimeo
+field_type: video_embed_field

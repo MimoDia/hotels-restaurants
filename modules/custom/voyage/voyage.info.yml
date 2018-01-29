@@ -1,0 +1,5 @@
+name: voyage
+type: module
+description: blogue de voyage
+core: 8.x
+package: Custom

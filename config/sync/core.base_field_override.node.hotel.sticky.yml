@@ -1,0 +1,22 @@
+uuid: 5a7b9545-d434-408a-8e25-041e00430860
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.hotel
+id: node.hotel.sticky
+field_name: sticky
+entity_type: node
+bundle: hotel
+label: 'Epinglé en haut des listes'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

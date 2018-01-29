@@ -1,0 +1,22 @@
+uuid: 2b23c7c2-c75d-460b-abab-9f9a390a39d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.annonce.field_description_de_l_annonce
+  module:
+    - annonce
+    - text
+id: annonce.annonce.field_description_de_l_annonce
+field_name: field_description_de_l_annonce
+entity_type: annonce
+bundle: annonce
+label: 'Description de l''annonce'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

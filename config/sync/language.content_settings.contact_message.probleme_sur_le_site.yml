@@ -1,0 +1,11 @@
+uuid: eb2f7aa1-8fc7-4e13-b2a3-4a5384874242
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.probleme_sur_le_site
+id: contact_message.probleme_sur_le_site
+target_entity_type_id: contact_message
+target_bundle: probleme_sur_le_site
+default_langcode: site_default
+language_alterable: false

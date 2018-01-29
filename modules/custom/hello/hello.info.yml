@@ -1,0 +1,6 @@
+name: hello
+description: module qui dit hello
+type: module
+core: 8.x
+version: 8.4
+package: hello

@@ -1,0 +1,13 @@
+uuid: 469115cd-7219-4af5-b4ea-ac12f76b1244
+langcode: fr
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: c5x62CEac0adja_twp51SAMoQxSMhUqub19onhvmuHM
+id: gender
+label: Sexe
+category: Demographic
+options: "Male: Male\nFemale: Female\nTransgender: Transgender\n"

@@ -1,0 +1,5 @@
+entity.voyage.add_form:
+  route_name: entity.voyage.add_form
+  title: 'Add Voyage'
+  appears_on:
+    - entity.voyage.collection

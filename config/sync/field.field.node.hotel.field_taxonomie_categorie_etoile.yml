@@ -1,0 +1,29 @@
+uuid: 6ba35427-5354-436d-9c03-adea47447ef2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxonomie_categorie_etoile
+    - node.type.hotel
+    - taxonomy.vocabulary.categorie_nombre_d_etoiles_
+id: node.hotel.field_taxonomie_categorie_etoile
+field_name: field_taxonomie_categorie_etoile
+entity_type: node
+bundle: hotel
+label: 'Taxonomie catégorie étoiles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorie_nombre_d_etoiles_: categorie_nombre_d_etoiles_
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

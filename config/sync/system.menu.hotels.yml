@@ -1,0 +1,8 @@
+uuid: 1920d90c-c5aa-4778-866a-452ebdec6613
+langcode: fr
+status: true
+dependencies: {  }
+id: hotels
+label: 'Mon menu Hôtels'
+description: 'Menu hôtels qui affiche les hôtels et leur catégorisation(nbre d''étoiles)'
+locked: false

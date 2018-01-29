@@ -1,0 +1,75 @@
+<?php
+/** @file ...*/
+/**
+*Implements hook_schema().
+*/
+function hello_schema(){
+	$schema['hello_node_history']= array(
+	'description' => 'Description de mon contenu.',
+	'fields' => array(
+		'hid' => array(
+			'description' => 'Primary keys: clef primaire de ma table',
+			'type'     => 'serial',
+			'not null' => 'TRUE', 
+		),
+		'nid' => array(
+			'description' => 'Ip adress',
+			'type'     => 'int',
+			'size' => 'medium',
+			'not null' => 'TRUE', 
+			'unsigned' => 'TRUE',
+		),
+		'update_time' => array(
+		'description' => 'Description de mes mises ajours',
+			'type'     => 'int',
+			'unsigned' => 'TRUE',
+			'not null' => 'TRUE', 
+		),
+// Pour un champ pourles les collegues developpeur. Donne l'ui de celuiqui a installer en premier le module
+		'uid' => array(
+		'description' => 'user ID',
+			'type'     => 'int',
+			'unsigned' => 'TRUE',
+			'not null' => 'TRUE', 
+		),
+	),
+
+	'primary key' => array('hid'),
+	'index' => array('nid' => array('nid')),
+	);
+return	$schema;
+}
+
+/**
+* update hook_schema()// ici pas obligatoire de le faire car on satdeja 
+* que la fonction hook_update() fait un update du module hello
+*icio fait appelle directement a la fonction hook_update()
+*/
+
+/**
+*Add a 'uid' field to the hello_node_history table.
+*/
+
+// function hello_update_8013(){
+// 	drupal_set_message('Hello dear, your updating  of your modification has been done on your module "hello" ');
+// }
+
+function hello_update_8014() {
+ /*$spec = [
+     'hello_author' => [
+         'table' => 'users',
+         'columns' => ['uid' => 'uid'],
+   ];*/
+    $spec = array(
+   'type' => 'int',
+   'description' => "Store user ID",
+   'unsigned'  =>TRUE,
+   'not null' => TRUE,
+ );
+
+ $schema = Database::getConnection()->schema();
+ $schema->addField('hello_node_history', 'uid', $spec);
+}
+
+
+

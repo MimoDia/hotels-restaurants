@@ -1,0 +1,50 @@
+uuid: 36e3cdc0-c5c2-4e57-832d-2f8f14579745
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_image
+    - field.field.block_content.bloc_image.body
+    - field.field.block_content.bloc_image.field_etiquette_iamge
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.bloc_image.default
+targetEntityType: block_content
+bundle: bloc_image
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_etiquette_iamge:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

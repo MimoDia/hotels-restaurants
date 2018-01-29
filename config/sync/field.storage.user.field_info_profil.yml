@@ -1,0 +1,19 @@
+uuid: 2edc4803-0281-41b3-af3f-5ed647300fde
+langcode: fr
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_info_profil
+field_name: field_info_profil
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

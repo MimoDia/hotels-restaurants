@@ -1,0 +1,17 @@
+uuid: f8a57dd5-6abe-4c31-b0bc-1454e666147b
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Newsletter des hôtels'
+id: newsletter_des_hotels
+description: 'Des nouvelles'
+format: html
+priority: 0
+receipt: true
+from_name: 'hôtels et restaurants'
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: ibrahima88sow@yahoo.fr
+hyperlinks: true
+new_account: none
+opt_inout: double
+weight: 0

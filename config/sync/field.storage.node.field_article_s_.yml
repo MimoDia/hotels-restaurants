@@ -1,0 +1,19 @@
+uuid: ce3f79b1-faa1-4edc-89c6-f253c5c67bbc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_article_s_
+field_name: field_article_s_
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

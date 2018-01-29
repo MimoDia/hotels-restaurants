@@ -1,0 +1,14 @@
+uuid: c26bf32f-12c0-44b9-a2d5-a2f80c17c11b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.hotels
+    - taxonomy.vocabulary.categorie_nombre_d_etoiles_
+id: categorie_nombre_etoile_vesr_lien
+label: 'Categorie nombre etoile vesr lien'
+vocabulary: categorie_nombre_d_etoiles_
+menu: hotels
+expanded: false
+depth: 0
+menu_parent: 'hotels:menu_link_content:1da967f0-7fd9-46f8-9d99-9f775c16893b'

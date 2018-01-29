@@ -1,0 +1,20 @@
+uuid: 58b1b8d7-dd17-4086-935d-a0cc97e72312
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ville
+  module:
+    - path
+id: taxonomy_term.ville.path
+field_name: path
+entity_type: taxonomy_term
+bundle: ville
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

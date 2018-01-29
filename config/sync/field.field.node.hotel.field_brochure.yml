@@ -1,0 +1,27 @@
+uuid: cfd6750a-8b11-402e-91b1-e5184bc2f253
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_brochure
+    - node.type.hotel
+  module:
+    - file
+id: node.hotel.field_brochure
+field_name: field_brochure
+entity_type: node
+bundle: hotel
+label: Brochure
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: fichier/pdf
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

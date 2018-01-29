@@ -1,0 +1,20 @@
+uuid: 2b17a396-a899-4e5d-93c8-208c0b7bf702
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Utilisateur anonyme'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'search content'
+  - 'select account cancellation method'
+  - 'subscribe to newsletters'
+  - 'use text format restricted_html'

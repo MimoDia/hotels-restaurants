@@ -1,0 +1,20 @@
+uuid: 36c40782-7280-46d6-8275-271bb7bfaffa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.restaurant
+  module:
+    - path
+id: node.restaurant.path
+field_name: path
+entity_type: node
+bundle: restaurant
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

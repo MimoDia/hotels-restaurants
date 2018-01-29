@@ -1,0 +1,36 @@
+uuid: 76091e7b-bff1-41ca-a447-b4554d98357e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.probleme_sur_le_site
+    - field.field.contact_message.probleme_sur_le_site.field_urldu_site
+  module:
+    - link
+id: contact_message.probleme_sur_le_site.default
+targetEntityType: contact_message
+bundle: probleme_sur_le_site
+mode: default
+content:
+  field_urldu_site:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,33 @@
+uuid: 90510349-d14e-4268-890d-1b2c7cd3ac3c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.hotels_de_meme_categorie
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__hotels_de_meme_categorie_block_1
+theme: bartik
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'views_block:hotels_de_meme_categorie-block_1'
+settings:
+  id: 'views_block:hotels_de_meme_categorie-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      hotel: hotel
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

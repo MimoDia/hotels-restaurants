@@ -1,0 +1,26 @@
+uuid: 320c00e2-98e8-42f3-bf1d-ffea2e936e66
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appointment_date
+    - node.type.appointment_calendar
+  module:
+    - datetime
+_core:
+  default_config_hash: wFiBTFR4vUF8nafWWHxnIDt_S9BRGAtxtmjCEK7hgwo
+id: node.appointment_calendar.field_appointment_date
+field_name: field_appointment_date
+entity_type: node
+bundle: appointment_calendar
+label: 'Appointment Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

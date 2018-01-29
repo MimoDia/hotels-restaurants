@@ -1,0 +1,20 @@
+uuid: 65791834-439c-4003-88fd-95041bd4b253
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.hotel
+  module:
+    - path
+id: node.hotel.path
+field_name: path
+entity_type: node
+bundle: hotel
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

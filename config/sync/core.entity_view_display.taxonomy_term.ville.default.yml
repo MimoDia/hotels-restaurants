@@ -1,0 +1,33 @@
+uuid: f104629d-f693-46c5-95fc-721d795a9065
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ville.field_picto_type_d_hotel
+    - taxonomy.vocabulary.ville
+  module:
+    - image
+    - text
+id: taxonomy_term.ville.default
+targetEntityType: taxonomy_term
+bundle: ville
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_picto_type_d_hotel:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

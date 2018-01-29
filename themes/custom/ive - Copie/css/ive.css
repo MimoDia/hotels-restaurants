@@ -1,0 +1,54 @@
+.site-branding__name {
+    font-size: 2rem;
+    font-family: Impact;
+}
+
+.site-branding__name a{
+    color:orange;
+}
+
+#header {
+    background-color: #fff;
+    background-image: none;
+    background:#fff;
+}
+
+
+
+.path-frontpage #content .node--view-mode-teaser h2 a {
+    color: orange;
+    font-size: 2rem;
+    font-family: Impact;
+}
+
+.sidebar .block {
+    background-color: #fff;
+    border-color:0;
+    border-bottom: 1px solid red;
+}
+
+.sidebar .block h2 {
+    text-transform: uppercase;
+    border-color:0;
+    color:orange;
+}
+
+.drupal8{
+    background-color: orange;
+}
+
+
+
+.node .article_macolonne{ 
+     float: left;
+     width: 50%;
+}
+
+.node .icone::before {
+    content:"";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background:url("../images/external-link.gif");
+  /**  content:url("../images/external-link.gif"); **/
+}

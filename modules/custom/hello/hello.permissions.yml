@@ -1,0 +1,16 @@
+mapermission:
+ title: 'Ma permission'
+ description: 'Je fais une permission sur mon bloc de session deja crée'
+ restrict access: 'true'
+
+administer helloadminblockcolor:
+ title: 'Ma permission admin hello'
+ description: 'Seuls les utilisateurs possédant la permission administrer hello puissent accéder au bloc color admin'
+ restrict access: 'true'
+
+
+access hello:
+ title: 'Ma permission calculatrice'
+ description: 'Seuls les utilisateurs ayant la permission access hello puissent accéder à la page calculatrice'
+ restrict access: 'true'
+

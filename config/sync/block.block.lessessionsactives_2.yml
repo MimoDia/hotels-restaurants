@@ -1,0 +1,20 @@
+uuid: de1be8c3-3e4b-4551-a08b-eb4d61e408c9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - hello
+  theme:
+    - bartik
+id: lessessionsactives_2
+theme: bartik
+region: sidebar_first
+weight: -12
+provider: null
+plugin: session_active
+settings:
+  id: session_active
+  label: 'Les sessions actives'
+  provider: hello
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: 11742071-57fa-4ff0-b45e-3ac15288164a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - ctools
+    - simplenews
+  theme:
+    - bartik
+id: simplenewssubscription
+theme: bartik
+region: sidebar_first
+weight: -8
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Newsletter articles'
+  provider: simplenews
+  label_display: visible
+  newsletters:
+    default: default
+  message: 'Rester informer sur la nouveuté des articles'
+  unique_id: d1e3a535-225e-41ad-a1f6-42414772eac1
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

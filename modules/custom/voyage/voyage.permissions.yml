@@ -1,0 +1,19 @@
+add voyage entities:
+  title: 'Create new Voyage entities'
+
+administer voyage entities:
+  title: 'Administer Voyage entities'
+  description: 'Allow to access the administration form to configure Voyage entities.'
+  restrict access: true
+
+delete voyage entities:
+  title: 'Delete Voyage entities'
+
+edit voyage entities:
+  title: 'Edit Voyage entities'
+
+view published voyage entities:
+  title: 'View published Voyage entities'
+
+view unpublished voyage entities:
+  title: 'View unpublished Voyage entities'

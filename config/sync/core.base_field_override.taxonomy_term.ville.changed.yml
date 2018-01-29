@@ -1,0 +1,18 @@
+uuid: 458d818e-689d-41f4-b555-b97d3fd70f05
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ville
+id: taxonomy_term.ville.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: ville
+label: Modifié
+description: 'Le moment auquel le terme a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

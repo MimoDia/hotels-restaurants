@@ -1,0 +1,23 @@
+uuid: 215e9ee0-df52-4988-ae66-84c0a3980600
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.probleme_sur_le_site
+    - field.storage.contact_message.field_urldu_site
+  module:
+    - link
+id: contact_message.probleme_sur_le_site.field_urldu_site
+field_name: field_urldu_site
+entity_type: contact_message
+bundle: probleme_sur_le_site
+label: 'url de la page problematique'
+description: 'lien du site'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

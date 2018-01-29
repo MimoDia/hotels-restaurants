@@ -1,0 +1,27 @@
+uuid: 5bb80aaa-8316-4ca8-9327-6fa4cb2e9c46
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Utilisateur authentifié'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access hello'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'administer hello'
+  - 'administer helloadminblockcolor'
+  - mapermission
+  - 'post comments'
+  - 'search content'
+  - 'select account cancellation method'
+  - 'skip comment approval'
+  - 'subscribe to newsletters'
+  - 'use text format basic_html'

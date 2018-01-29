@@ -1,0 +1,17 @@
+uuid: 031e30de-623b-4039-813d-4b1123c46c07
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Restaurant
+type: restaurant
+description: 'Je relie apres un restaurant à un Hôtel'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

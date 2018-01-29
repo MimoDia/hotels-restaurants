@@ -1,0 +1,18 @@
+uuid: cdc0155f-3477-4f86-9b2b-379d60714e6e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.restaurant
+id: node.restaurant.title
+field_name: title
+entity_type: node
+bundle: restaurant
+label: 'Nom du restaurant'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

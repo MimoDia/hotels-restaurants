@@ -1,0 +1,31 @@
+uuid: 308394c5-5027-4800-9dfa-1cdac3175fb7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.vue_hotel
+  module:
+    - annonce
+    - views
+  theme:
+    - bartik
+id: views_block__vue_hotel_block_1
+theme: bartik
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'views_block:vue_hotel-block_1'
+settings:
+  id: 'views_block:vue_hotel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  annonce_date:
+    id: annonce_date
+    dateStart: '2018-01-27'
+    dateEnd: '2018-01-23'
+    negate: false
+    context_mapping: {  }

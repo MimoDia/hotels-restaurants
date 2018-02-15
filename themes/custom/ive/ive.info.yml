@@ -19,7 +19,7 @@ package: Core
 # version: VERSION
 # core: 8.x
 libraries:
-  - ive/ive # charge ma librairie ive creer dans le fichier yml.info ()
+  - ive/ive # charge ma librairie ive creer dans le fichier ive.libraries.yml
 ckeditor_stylesheets:
   - css/wysiwyg.css 
 regions:

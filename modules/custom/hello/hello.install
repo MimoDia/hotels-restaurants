@@ -37,7 +37,7 @@ function hello_schema(){
 	'primary key' => array('hid'),
 	'index' => array('nid' => array('nid')),
 	);
-return	$schema;
+return $schema;
 }
 
 /**
